@@ -2,6 +2,28 @@
 	
 	'use strict';
 
+	var isMobile = {
+		Android: function() {
+			return navigator.userAgent.match(/Android/i);
+		},
+			BlackBerry: function() {
+			return navigator.userAgent.match(/BlackBerry/i);
+		},
+			iOS: function() {
+			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+			Opera: function() {
+			return navigator.userAgent.match(/Opera Mini/i);
+		},
+			Windows: function() {
+			return navigator.userAgent.match(/IEMobile/i);
+		},
+			any: function() {
+			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+		}
+	};
+
+
 	var mobileMenuOutsideClick = function() {
 
 		$(document).click(function (e) {
@@ -21,6 +43,29 @@
 
 	};
 
+
+	var scrollNavBar = function() {
+
+		if ( $(window).scrollTop() > 50)  {
+			$('body').addClass('scrolled');
+			$('.js-fh5co-nav-toggle').removeClass('fh5co-nav-white');
+		} else {
+			$('body').removeClass('scrolled');
+			$('.js-fh5co-nav-toggle').addClass('fh5co-nav-white');
+		}
+
+		$(window).scroll(function(){
+			if ( $(window).scrollTop() > 50)  {
+				$('body').addClass('scrolled');
+				$('.js-fh5co-nav-toggle').removeClass('fh5co-nav-white');
+			} else {
+				$('body').removeClass('scrolled');
+				$('.js-fh5co-nav-toggle').addClass('fh5co-nav-white');
+			}
+		});
+
+
+	};
 
 	var offcanvasMenu = function() {
 
@@ -196,9 +241,17 @@
 		}
 	};
 
+	var parallax = function() {
+		if ( !isMobile.any()) {
+			$(window).stellar();
+		}
+	};
+
+
 	
 	$(function(){
 		mobileMenuOutsideClick();
+		scrollNavBar();
 		offcanvasMenu();
 		burgerMenu();
 		contentWayPoint();
@@ -206,6 +259,7 @@
 		goToTop();
 		loaderPage();
 		counterWayPoint();
+		parallax();
 	});
 
 
