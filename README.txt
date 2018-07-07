@@ -1,10 +1,11 @@
 
-TITLE: 
+#TITLE: 
 FEMSCODE | Official Website
 
-AUTHOR(s):
+#AUTHOR(s):
 DESIGNED & DEVELOPED by Tobby Junior and < new_developer input here>
 
-CREDITS:
-Tobby Junior
+#CREDITS:
+Tobby Junior and <new_developers input here>
+
 #COMING SOON
