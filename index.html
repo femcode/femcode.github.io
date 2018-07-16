@@ -49,21 +49,47 @@
     <script src="js/modernizr-2.6.2.min.js"></script>
 
 
-    <!-- Try Re-activating 	Internet Explorer 0>8 if need be(Optional) Note by "Tobby Junior"-->
+
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
     <![endif]-->
 
-
 </head>
 
 
 <style>
-    /* .background {
-        background-color: "";
+    /* .bg {
+        background: rgb(183, 0, 255), rgb(255, 0, 234), rgb(0, 140, 255);
+        background: -webkit-linear-gradient(-125deg, rgb(0, 140, 255), rgb(116, 192, 255), rgba(4, 134, 240, 0.842));
+        background: -o-linear-gradient(-125deg, rgb(0, 140, 255), rgb(116, 192, 255), rgba(4, 134, 240, 0.842));
+        background: -moz-linear-gradient(-125deg, rgb(0, 140, 255), rgb(116, 192, 255), rgba(4, 134, 240, 0.842));
+        background: linear-gradient(-125deg, rgb(0, 140, 255), rgb(116, 192, 255), rgba(4, 134, 240, 0.842));
     }
     */
+    
+    #hr {
+        margin: 15px auto;
+        padding: 0;
+        max-width: 100px;
+        border: 20;
+        border-top: solid 3px rgb(97, 97, 97);
+        text-align: center;
+    }
+    
+    #hr_footer {
+        margin: 15px auto;
+        padding: 0;
+        max-width: 300px;
+        border: 20;
+        text-align: center;
+    }
+    
+    .box-content.box-style {
+        background-attachment: fixed;
+        background-color: #222;
+        color: #fff;
+    }
 </style>
 
 <body>
@@ -72,11 +98,14 @@
     <div class="fh5co-loader"></div>
 
     <div id="page">
+
+        <!--Beginning of navigation area-->
         <nav class="fh5co-nav" role="navigation">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-2 text-left">
                         <div id="fh5co-logo">
+
                             <a href="index.html">FEMSCODE<span style="color: red;">.</span></a>
                         </div>
                     </div>
@@ -85,20 +114,20 @@
                         <ul>
                             <li class="active"><a href="index.html">Home</a></li>
                             <li class="has-dropdown">
-                                <a href="launch/coming_soon.html">Services</a>
-                                <ul class="dropdown">
+                                <a href="launch/coming_soon.html">About Us</a>
+                                <!-- <ul class="dropdown">
                                     <li><a href="#">coming soon</a></li>
                                     <li><a href="#">coming soon</a></li>
 
                                 </ul>
+                            -->
                             </li>
-                            <!--replace with gallery.html when galleries are ready for use-->
+                            <!--replace "launch/coming_soon.html" with "gallery.html" when galleries are ready for use-->
                             <li><a href="launch/coming_soon.html">Gallery</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li> <a href="review.html">Courses</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-
-
+                            <li><a href="members.html">Members</a></li>
+                            <li> <a href="courses.html">Courses</a></li>
+                            <li>
+                                <a href="#fh5co-contact">Contact Us </a> </li>
                         </ul>
                     </div>
                 </div>
@@ -106,19 +135,20 @@
             </div>
         </nav>
 
-        <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url('images/computer-1209641_960_720.jpg');" data-stellar-background-ratio="0.5">
+        <!--End of Navigation area-->
+
+        <!--Header section Note: use (rgba(5, 5, 5, 0.799) for <div class="overlay"-->
+        <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url('images/black-girls-coding.jpg');" data-stellar-background-ratio="0.5">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-7 text-left">
-                        <div class="display-t">
+                        <div class="display-tc">
                             <div class="display-tc animate-box" data-animate-effect="fadeInUp">
                                 <h1 class="mb30">Building The Next Generation of Female Tech Geniuses</h1>
                                 <p>
 
-
-                                    <!--(link-watch popup-vimeo) use stated "class" for video(meetups) pop-ups when available/ready -->
-                                    <a href="#fh5co-project" class="  btn btn-primary  nav-link js-scroll-trigger ">Get Started</a>
+                                    <a href="https://noVideoHere.com" class="link-watch popup-vimeo  btn btn-primary ">CLICK TO BE INSPIRED   <span class="icon-fast-forward"></span></a>
                                 </p>
                                 <div class="mb30 text-right">
 
@@ -132,71 +162,205 @@
         </header>
 
 
+        <!--End of header section-->
 
 
 
-        <!--
+        <div class="col-lg-12">
+            <br>
+        </div>
 
-        <div id="fh5co-testimonial" class="fh5co-bg-section">
-            <div class="container">
-                <div class="row animate-box row-pb-md">
-                    <div class="col-md-8 col-md-offset-2 text-left fh5co-heading">
-                        <span>You deserved happiness</span>
-                        <h2>Happy Clients</h2>
-                        <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+        <div class="col-lg-12">
+            <br>
+        </div>
+
+        <!--Details about us-->
+        <div class="row row-pb-md" id="bg" style="background-color: whitesmoke;">
+            <!--About us -->
+            <div class="col-lg-12">
+                <center>
+                    <h1 style="color: #333; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 50px;">GET TO KNOW US</h1>
+                    <hr id="hr">
+
+                </center>
+            </div>
+
+
+            <div class="col-lg-12">
+                <br>
+            </div>
+
+            <div class="col-lg-12">
+                <br>
+            </div>
+            <!--End about us-->
+
+
+
+            <div class=" col-sm-3   " style=" color: rgb(6, 155, 255);">
+                <center>
+                    <div class="feature-center animate-box" data-animate-effect="fadeInUp" style="border-radius: 80px; color:rgb(6, 155, 255) ;">
+                        <span class="icon">
+                                            <i class="icon-power" style="color:rgb(6, 155, 255);"></i>
+                                        </span>
+                        <h1 style="color:rgb(6, 155, 255);">Our Mission</h2>
+                            <p style="color:black;"> " <strong>FEMSCODE</strong> was created to help <strong>Counter The Culture</strong> in tech and teach girls to code, putting them on track to rewarding careers in Tech."</p>
+
+
+
+                    </div>
+                </center>
+            </div>
+
+
+            <div class=" col-sm-3 ">
+
+                <center>
+                    <div class=" feature-center animate-box " data-animate-effect="fadeInUp " style="border-radius: 80px;">
+                        <span class="icon ">
+                        <!--use below ( rgb(248, 191, 4) -->
+                                                <i class="icon-eye " style="color:rgb(248, 191, 4); "></i>
+                                            </span>
+                        <h1 style="color:rgb(248, 191, 4); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">Our Vision</h2>
+
+                            <p style="color:black; "> "To positively <strong>Enlighten</strong> and <strong>Impact Females</strong> and their interest in Computer Science and in the Tech world as a whole. "</p>
+
+
+                    </div>
+                </center>
+            </div>
+
+            <div class=" col-sm-3 ">
+                <center>
+                    <div class="feature-center animate-box " data-animate-effect="fadeInUp " style="border-radius: 80px; ">
+                        <span class="icon ">
+                                <!-- use below rgba(250, 7, 128, 0.877) -->
+                                        <i class="icon-network " style="color: rgba(250, 7, 128, 0.877); "></i>
+                                    </span>
+                        <h1 style="color: rgba(250, 7, 128, 0.877); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">Our Goal</h2>
+                            <p style="color:black; "> "To reach out to all Female students of Yaba College Of Technology by providing them with the tools and curriculums to progress in Tech. "</p>
+
+
+                    </div>
+                </center>
+            </div>
+            <div class=" col-sm-3 ">
+                <center>
+                    <div class="feature-center animate-box " data-animate-effect="fadeInUp " style="border-radius: 80px;">
+                        <span class="icon ">
+                                        <i class="icon-light-up " style="color:#3EB991; "></i>
+                                    </span>
+
+                        <h1 style="color:#3EB991;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">Benefits</h2>
+
+                            <p style="color:black; "> "Collaboration,reliable Mentors,free access to Computers,free Internet Access,serene environment for learning. "</p>
+
+                    </div>
+                </center>
+            </div>
+
+        </div>
+        <!--End details about us-->
+
+        <!-- Extra benefits section-->
+        <div id="fh5co-started" style="background-image: url( 'images/bg.png'); background-size:cover;" data-stellar-background-ratio="0.5">
+            <div class="container ">
+
+                <div class="gtco-client ">
+
+                    <div class="gtco-container ">
+                        <div class=" animate-box " data-animate-effect="fadeInUp ">
+                            <center>
+                                <h2 style="color: white; " class="icon-hand "><span></span>Collaborate <span>|</span> <span class="icon-px-with-circle "></span>Build <span>|</span> <span class="icon-book2 "></span>Innovate <span>|</span> <span class="icon-play "></span>Have Fun
+                                </h2>
+                            </center>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 animate-box">
-                        <div class="testimonial">
-                            <blockquote>
-                                <p>&ldquo;Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.&rdquo;</p>
-                                <p class="author"> <img src="images/person1.jpg" alt="Free HTML5 Bootstrap Template by gettemplates.co"> <cite>&mdash; Mike Adam</cite></p>
-                            </blockquote>
+            </div>
+        </div>
+        <!--End Extra benefits section-->
+
+        <!--Beginning of new section (un_named)-->
+
+        <div class="container-fluid animate-box " data-animate-effect="fadeInUp ">
+
+
+
+
+
+            <div class="col-md-6 col-md-push-1 ">
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <hr>
+
+
+                <div class="desc ">
+
+
+
+                    <div class="col-md-5 col-md-push-1 ">
+
+                        <div class="fh5co-contact-info ">
+                            <!--Rememberance note to self-->
+                            <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">(Remember to add new details here)</h2>
+                            <ul class="fh5co-social-icons ">
+                                <li class="icon-area-graph ">(Remember to add new details here)</li>
+                                <li class="icon-bar-graph-2 "><a href="tel://+2347056507458 ">(Remember to add new details here)</a></li>
+                                <li class="icon-pie-graph "><a href="mailto:femscode1@gmail.com ">(Remember to add new details here)</a></li>
+
+                            </ul>
+                            <!--End of note to self-->
+
                         </div>
 
-                        <div class="testimonial fh5co-selected">
-                            <blockquote>
-                                <p>&ldquo;Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius. Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta
-                                    adipisci architecto culpa amet.&rdquo;</p>
-                                <p class="author"><img src="images/person2.jpg" alt="Free HTML5 Bootstrap Template by gettemplates.co"> <cite>&mdash; Eric Miller</cite></p>
-                            </blockquote>
-                        </div>
+
                     </div>
-
-                    <div class="col-md-6 animate-box">
-                        <div class="testimonial fh5co-selected">
-                            <blockquote>
-                                <p>&ldquo;Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius. Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta
-                                    adipisci architecto culpa amet.&rdquo;</p>
-                                <p class="author"><img src="images/person3.jpg" alt="Free HTML5 Bootstrap Template by gettemplates.co"> <cite>&mdash; Eric Miller</cite></p>
-                            </blockquote>
-                        </div>
-
-                        <div class="testimonial">
-                            <blockquote>
-                                <p>&ldquo;Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.&rdquo;</p>
-                                <p class="author"><img src="images/person1.jpg" alt="Free HTML5 Bootstrap Template by gettemplates.co"> <cite>&mdash; Mike Adam</cite></p>
-                            </blockquote>
-                        </div>
-
-                    </div>
-
 
 
                 </div>
             </div>
+
+
+
+            <!--Image for section (un_named)-->
+
+            <div class="col-md-4 col-md-push-1 ">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <img class="img-responsive " src="images/teenage-girls.jpg" alt="about ">
+            </div>
+
+
+            <!--End Image section (un_named)-->
+
         </div>
 
+        <!--End of new section (un_named)-->
 
-        <div id="fh5co-counter">
+
+
+        <br>
+        <br>
+        <br>
+
+        <!--Beginning Facts Section-->
+
+        <div id="fh5co-counter" style="background-color: whitesmoke; ">
             <div class="container">
-
                 <div class="row animate-box" data-animate-effect="fadeInUp">
                     <div class="col-md-8 col-md-offset-2 text-left fh5co-heading">
-                        <span>Enjoy it</span>
-                        <h2>Fun Facts</h2>
-                        <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                        <center>
+                            <h2>Interesting Facts</h2>
+                        </center>
                     </div>
                 </div>
 
@@ -205,37 +369,37 @@
                     <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
                         <div class="feature-center">
                             <span class="icon">
-							<i class="ti-download"></i>
-						</span>
-                            <span class="counter"><span class="js-counter" data-from="0" data-to="15" data-speed="1500" data-refresh-interval="50">1</span>M+</span>
-                            <span class="counter-label">Downloads</span>
+                                    <i class="ti-download"></i>
+                                </span>
+                            <span class="counter"><span class="js-counter" data-from="0" data-to="3" data-speed="1500" data-refresh-interval="50"></span></span>
+                            <span class="counter-label">Members</span>
 
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
                         <div class="feature-center">
                             <span class="icon">
-								<i class="ti-face-smile"></i>
-							</span>
-                            <span class="counter"><span class="js-counter" data-from="0" data-to="120" data-speed="1500" data-refresh-interval="50">1</span>+</span>
-                            <span class="counter-label">Happy Clients</span>
+                                        <i class="ti-face-smile"></i>
+                                    </span>
+                            <span class="counter"><span class="js-counter" data-from="0" data-to="2" data-speed="1500" data-refresh-interval="50"></span></span>
+                            <span class="counter-label">Mentors</span>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
                         <div class="feature-center">
                             <span class="icon">
-								<i class="ti-briefcase"></i>
-							</span>
-                            <span class="counter"><span class=" js-counter" data-from="0" data-to="90" data-speed="1500" data-refresh-interval="50">1</span>+</span>
+                                        <i class="ti-briefcase"></i>
+                                    </span>
+                            <span class="counter"><span class=" js-counter" data-from="0" data-to="0" data-speed="1500" data-refresh-interval="50"></span></span>
                             <span class="counter-label">Projects Done</span>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
                         <div class="feature-center">
                             <span class="icon">
-								<i class="ti-time"></i>
-							</span>
-                            <span class="counter"><span class="js-counter" data-from="0" data-to="12" data-speed="1500" data-refresh-interval="50">1</span>K+</span>
+                                        <i class="ti-time"></i>
+                                    </span>
+                            <span class="counter"><span class="js-counter" data-from="0" data-to="0" data-speed="1500" data-refresh-interval="50">0</span>hr</span>
                             <span class="counter-label">Hours Spent</span>
 
                         </div>
@@ -243,231 +407,80 @@
 
                 </div>
             </div>
-        </div>
-
-        <div id="fh5co-blog" class="fh5co-bg-section">
-            <div class="container">
-                <div class="row animate-box row-pb-md" data-animate-effect="fadeInUp">
-                    <div class="col-md-8 col-md-offset-2 text-left fh5co-heading">
-                        <span>Thoughts &amp; Ideas</span>
-                        <h2>Our Blog</h2>
-                        <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeInUp">
-                        <div class="fh5co-post">
-                            <span class="fh5co-date">Sep. 12th</span>
-                            <h3><a href="#">Web Design for the Future</a></h3>
-                            <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-                            <p class="author"><img src="images/person1.jpg" alt="Free HTML5 Bootstrap Template by gettemplates.co"> <cite> Mike Adam</cite></p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeInUp">
-                        <div class="fh5co-post">
-                            <span class="fh5co-date">Sep. 23rd</span>
-                            <h3><a href="#">Web Design for the Future</a></h3>
-                            <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-                            <p class="author"><img src="images/person1.jpg" alt="Free HTML5 Bootstrap Template by gettemplates.co"> <cite> Mike Adam</cite></p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeInUp">
-                        <div class="fh5co-post">
-                            <span class="fh5co-date">Sep. 24th</span>
-                            <h3><a href="#">Web Design for the Future</a></h3>
-                            <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-                            <p class="author"><img src="images/person1.jpg" alt="Free HTML5 Bootstrap Template by gettemplates.co"> <cite> Mike Adam</cite></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-         
-    -->
-
-
-        <!--  <div id=" history  " class="container" style="background-color: whitesmoke">
-            <div class="row row-pb-md">
-                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading ">
-                    <span>  </span>
-
-                    <p style="font-size:60px ; color: black"> Getting Started </p>
-
-
-                </div>
-            </div>
-        
 
 
 
-        -->
+            <!--End of facts section-->
+
+            <!--Beginning Contact section-->
+            <div id="fh5co-contact" style="background-color: white;">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-5 col-md-push-1 animate-box" style="text-align: left;">
 
 
+                            <div class="fh5co-contact-info">
 
+                                <h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Our Contact Information</h2>
+                                <ul>
+                                    <li class="address">24 Vcitory Crescent, <br> Meiran ,Lagos,Nigeria.</li>
+                                    <li class="phone"><a href="tel://+2347056507458" style="color: rgba(4, 134, 240, 0.842);">+234 705 6507 458</a></li>
+                                    <li class="email"><a href="mailto:femscode1@gmail.com" style="color: rgba(4, 134, 240, 0.842);">femscode1@gmail.com</a></li>
 
-
-
-
-
-        <div class="row row-pb-md">
-
-            <div class="col-md-3 col-sm-5" style="background-color: rgb(183, 0, 255);">
-                <div class="feature-center animate-box" data-animate-effect="fadeInUp">
-                    <span class="icon">
-                                                    <i class="icon-browser" style="color:white;"></i>
-                                                </span>
-                    <h3 style="color:white;">Web Development</h3>
-                    <p style="color:white;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-5" style="background-color: rgb(255, 0, 234);">
-                <div class="feature-center animate-box" data-animate-effect="fadeInUp">
-                    <span class="icon">
-                                                        <i class="icon-browser" style="color:white;"></i>
-                                                    </span>
-                    <h3 style="color:white;">Web Development</h3>
-                    <p style="color:white;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-
-                </div>
-            </div>
-
-
-            <div class="clearfix visible-sm-block"></div>
-            <div class="col-md-3 col-sm-5 " style="background-color: rgb(0, 255, 115);">
-                <div class="feature-center animate-box" data-animate-effect="fadeInUp">
-                    <span class="icon">
-                                        <i class="icon-tablet" style="color:white;"></i>
-                                    </span>
-                    <h3 style="color:white;">Mobile Development</h3>
-                    <p style="color:white;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-5 " style="background-color: rgb(0, 140, 255);">
-                <div class="feature-center animate-box" data-animate-effect="fadeInUp">
-                    <span class="icon">
-                                        <i class="icon-browser" style="color:white;"></i>
-                                    </span>
-                    <h3 style="color:white;">Web Development</h3>
-                    <p style="color:white;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-
-                </div>
-            </div>
-
-
-
-            <!--   <div id=" history  " class="container">
-                        <div class="row row-pb-md">
-                            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                                <span>  </span>
-
-                                <p style="font-size:60px ;"> About Us</p>
-
+                                </ul>
 
                             </div>
+
+
                         </div>
 
-                        <!-- FEMSCODE MISSION AND VISION
-                        <div class="col-md-6 col-md-push-1">
+                        <div class="col-md-6 animate-box" style="text-align: left;">
+                            <h3>Get In Touch</h3>
+                            <form action="#">
+                                <div class="row form-group">
+                                    <div class="col-md-12 ">
+                                        <!--  <label for="fname"></label> -->
+                                        <input type="text" id="fname" class="form-control" placeholder="Your name....." required="required">
+                                    </div>
 
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <hr>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <!-- <label for="email"></label> -->
+                                        <input type="text" id="email" class="form-control" placeholder="Your email address....." required="required">
+                                    </div>
+                                </div>
 
 
-                            <div class="desc">
-                                <h3>Our Mission &amp; Vision</h3>
-                                <p>FemsCodes aim is to
-                                    <i><b>Counter The Culture</b></i> by training and building the next Female Tech Geniuses such as Designers,developers,programmers and critical thinkers in the field of Tech.</p>
-                                <p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci rem dolorem nesciunt perferendis quae amet deserunt eum labore quidem
-                                    minima.
-                                </p>
-                            </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <!-- <label for="message"></label>  -->
+                                        <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Write message here....." required="required"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <input type="submit " value="Send Message" class="btn btn-lg btn-primary " style="border-radius: 30px; border-color: rgba(22, 150, 255, 0.842);background-color: rgba(4, 134, 240, 0.842); ">
+                                </div>
+
+                            </form>
+
                         </div>
-
-
-
-                        <div class="col-md-6 col-md-push-1">
-                            </br>
-                            </br>
-                            </br>
-                            </br>
-                            <img class="advanced-feature-img-right" src="images/process-02.svg" alt="about">
-                        </div>
-
-                        <!-- WHAT HAPPENS IN THE COMMUNITY
-
-
-                        <div class="col-md-6 col-md-push-6">
-                            </br> <br>
-                            </br>
-                            </br>
-                            <hr>
-                            <div class="desc">
-                                <h3>What Happens in the community?</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quo est quis mollitia ratione magni assumenda repellat atque modi temporibus tempore ex. Dolore facilis ex sunt ea praesentium expedita numquam?</p>
-                                <p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci rem dolorem nesciunt perferendis quae amet deserunt eum labore quidem
-                                    minima.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-md-pull-6">
-                            </br>
-                            </br>
-                            </br>
-
-                            <img class="advanced-feature-img-left" src="images/process-03.svg" alt="about">
-                        </div>
-
-
-
-                        <!--WHAT IS ITS IMPACT ON THE FEMALE COUNTERPARTS
-
-
-                        <div class="col-md-6 col-md-push-1">
-
-                            </br>
-                            </br>
-                            </br>
-                            <br>
-                            <hr>
-
-
-                            <div class="desc">
-                                <h3>What is Its Impact On The Female Counterparts</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quo est quis mollitia ratione magni assumenda repellat atque modi temporibus tempore ex. Dolore facilis ex sunt ea praesentium expedita numquam?</p>
-                                <p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci rem dolorem nesciunt perferendis quae amet deserunt eum labore quidem
-                                    minima.
-                                </p>
-                            </div>
-                        </div>
-
-
-
-                        <div class="col-md-6 col-md-push-1">
-                            </br>
-                            </br>
-                            </br>
-                            </br>
-                            <img class="advanced-feature-img-right" src="images/process-04.svg" alt="about">
-                        </div>
-
                     </div>
 
                 </div>
             </div>
 
 
-        </div>
-    </div>
--->
 
 
+
+            <!--End of contact section-->
+
+
+            <!--
             <div id="fh5co-project">
                 <div class="container">
 
@@ -500,71 +513,65 @@
                 </div>
 
             </div>
+-->
 
 
-
-            <div id="fh5co-started">
-                <div class="container">
-                    <div class="row animate-box">
-                        <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                            <span>Welcome</span>
-                            <h2>Let's Build Together</h2>
-                            <p>The community will help each and every member collaborate and learn how to build/work together as a group both remotely and otherwise.</p>
-                            <p> <a href="contact.html"><button  type="submit" class="btn btn-primary">Join The Community</button></a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <footer id="fh5co-footer" role="contentinfo">
+            <hr>
+            <!--Beginning of footer section-->
+            <footer id="fh5co-footer" role="contentinfo" style="background-color: rgba(5, 5, 5, 0.767)">
                 <div class="container">
                     <div class="row row-pb-md">
                         <div class="col-md-4 fh5co-widget ">
-                            <h3>FemsCode</h3>
-                            <p>FemsCode also known as FemalesCode is a community that Helps build all Female Students Of Yaba College of Technology to become future Problem solvers and provide innovative solutions to problems through Tech, and in essence
-                                give females a voice in Tech.</p>
+                            <h3 style="text-align: left;color: lightgray;">Who Are We?</h3>
+                            <p style="text-align: left; color: white;">FEMSCODE also known as FemalesCode is a community that aims to <strong>Counter The Culture</strong> by building the Female Students Of Yaba College of Technology to become future Problem solvers and provide innovative solutions
+                                to problems through Tech, and in essence give females a voice in Tech.</p>
                             <p>
                                 <a href="#"> </a>
                             </p>
                         </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 ">
-                            <ul class="fh5co-footer-links">
-                                <li><a href="#">About</a></li>
 
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Join Us</a></li>
-                                <li><a href="#">Meetups</a></li>
+                        <hr id="hr_footer">
+                        <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-2 ">
+                            <ul class="fh5co-footer-links ">
+                                <li><a href="# " style="color: white;">About</a></li>
+
+                                <li><a href="contact.html " style="color: white;">Contact Us</a></li>
+                                <li><a href="# " style="color: white;" ;>Mentors</a></li>
+                                <li><a href="# " style="color: white;">Team</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-2 ">
+                            <ul class="fh5co-footer-links ">
+                                <li><a href="# " style="color: white;">Gallery</a></li>
+                                <li><a href="# " style="color: white;">Testimonials</a></li>
+                                <li><a href="# " style="color: white;">Meetups</a></li>
+                                <li><a href="# " style="color: white;">Donate</a></li>
+
                             </ul>
                         </div>
 
                         <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 ">
-                            <ul class="fh5co-footer-links">
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="#">Testimonials</a></li>
-                                <li><a href="#">Donate</a></li>
-                            </ul>
-                        </div>
+                            <ul class="fh5co-footer-links ">
 
-                        <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 ">
-                            <ul class="fh5co-footer-links">
 
-                                <li><a href="#">Teams</a></li>
-                                <li><a href="#">Partnerships</a></li>
 
                             </ul>
                         </div>
                     </div>
 
+                    <hr>
                     <div class="row copyright">
                         <div class="col-md-12 text-center">
-                            <small class="block">&copy; 2018 FEMSCODE Yabatech.</small>
-                            <small class="block">Follow Us Or Reach Out To Us On All Our Social Media Platforms Below.</small>
+                            <small class="block " style="color: white;">&copy; 2018 FEMSCODE Yabatech.</small>
+                            <small class="block " style="color: white;">Follow Us Or Reach Out To Us On All Our Social Media Platforms Below.</small>
                             </p>
                             <p>
-                                <ul class="fh5co-social-icons">
-                                    <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                    <li><a href="#"><i class="icon-instagram"></i></a></li>
-                                    <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                <ul class="fh5co-social-icons ">
+                                    <li><a href="# "><i class="icon-facebook " style="color: blue;background-color: white; "></i></a></li>
+                                    <li><a href="# "><i class="icon-instagram " style="color: rgb(97, 55, 55);background-color: white; "></i></a></li>
+                                    <li><a href="# "><i class="icon-twitter " style="color: rgb(22, 123, 206); "></i></a></li>
 
                                 </ul>
                             </p>
@@ -573,9 +580,11 @@
 
                 </div>
             </footer>
-        </div>
 
-        <div class="gototop js-top ">
+            <!--End of footer section-->
+
+        </div>
+        <div class="gototop js-top">
             <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
         </div>
 
